@@ -1,0 +1,22 @@
+body {
+  scroll-behavior: smooth;
+}
+.scrollbar-none {
+  /* Standard property for Firefox and Edge */
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: transparent transparent;
+
+  /* For WebKit browsers (Chrome, Safari) */
+  overflow: auto; /* or overflow: scroll; */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.scrollbar-none::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: make scrollbar invisible */
+}
+
+.scrollbar-none .job-info:not(:last-of-type) {
+  margin-bottom: 5px;
+}

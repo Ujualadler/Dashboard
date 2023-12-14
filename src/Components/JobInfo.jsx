@@ -1,7 +1,7 @@
 import React from "react";
 import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
 
-function JobInfo({ jobItem }) {
+function JobInfo({ jobItem, setShowForm }) {
   return (
     <div
       className="p-2 rounded-md  job-info shadow-md"
@@ -41,6 +41,7 @@ function JobInfo({ jobItem }) {
                   ? "#D0D0D0"
                   : "rgba(255, 255, 255, 0.3)",
             }}
+            onClick={() => setShowForm(true)}
           >
             {jobItem?.action}
           </button>

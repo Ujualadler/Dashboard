@@ -11,7 +11,7 @@ function Form({ width, show }) {
   return (
     <div
       className={`${
-        width ? "w-[25%]" : " w-0"
+        width ? "w-[26%]" : " w-0"
       } overflow-hidden  fixed transition-all duration-700 z-30 top-2 rounded-xl right-4  bg-white h-[98%]`}
       style={{
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
@@ -38,7 +38,7 @@ function Form({ width, show }) {
       </div>
       <div
         className="px-3 pb-1 scrollbar-none"
-        style={{ maxHeight: "75%", overflowY: "auto" }}
+        style={{ maxHeight: "calc(100% - 88px)", overflowY: "auto" }}
       >
         <div className="flex justify-between gap-2 pb-1">
           <FormElement
@@ -117,14 +117,14 @@ function Form({ width, show }) {
             Job Details
           </button>
         </div>
-      </div>
-      <div className="flex justify-between px-6 py-9">
-        <button className="border border-[#4370fd] h-7 text-sm w-40 font-semibold  rounded-md text-[#4370fd]">
-          Cancel
-        </button>
-        <button className="bg-[#4370fd] text-white h-7 w-40 text-sm font-semibold rounded-md">
-          Save
-        </button>
+        <div className="flex justify-between px-3 py-9">
+          <button className="border border-[#4370fd] h-7 text-sm w-40 font-semibold  rounded-md text-[#4370fd]">
+            Cancel
+          </button>
+          <button className="bg-[#4370fd] text-white h-7 w-40 text-sm font-semibold rounded-md">
+            Save
+          </button>
+        </div>
       </div>
     </div>
   );

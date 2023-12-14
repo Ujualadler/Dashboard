@@ -40,7 +40,7 @@ function Form({ width, show }) {
         className="px-3 pb-1 scrollbar-none"
         style={{ maxHeight: "calc(100% - 88px)", overflowY: "auto" }}
       >
-        <div className="flex justify-between pb-1">
+        <div className="flex justify-between px-3 gap-2 pb-1">
           <FormElement
             label="Phone Number"
             type="text"

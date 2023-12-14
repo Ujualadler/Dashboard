@@ -11,7 +11,7 @@ function Form({ width, show }) {
   return (
     <div
       className={`${
-        width ? "w-[26%]" : " w-0"
+        width ? "w-[28%]" : " w-0"
       } overflow-hidden  fixed transition-all duration-700 z-30 top-2 rounded-xl right-4  bg-white h-[98%]`}
       style={{
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
